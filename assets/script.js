@@ -32,7 +32,7 @@ function submitSearchForm(event) {
       let moviePlot = $("<p>");
       moviePlot.text(data.Plot);
       movieInfoSection.append(moviePlot);
-
+  
       let movieList = $("<ul>");
       movieInfoSection.append(movieList);
 
