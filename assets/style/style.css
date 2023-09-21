@@ -84,3 +84,19 @@ header {
 .social-icon:hover {
     color: #e04e22;
 }
+
+.main {
+    margin-top: 10%;
+    height: 100vh;
+}
+
+.hero {
+    background-image: url("./images/hero_image.png");
+    background-size: cover; 
+    height: 1000px
+}
+
+.sidebar {
+    width: 25%;
+    background-color: white;
+}
