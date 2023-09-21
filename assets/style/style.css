@@ -1,0 +1,86 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS variables */
+:root {
+    --bg-color: #14171B;
+    --text-color: #fff;
+    --main-color: rgb(224, 78, 34);
+}
+
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.logo img {
+    width: 265px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all 0.5s ease;
+}
+
+.logo span {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+
+.navbar {
+    display: flex;
+    list-style: none; 
+}
+
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+
+.social-icon {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.social-icon:hover {
+    color: #e04e22;
+}
