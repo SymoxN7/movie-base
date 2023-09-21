@@ -84,3 +84,39 @@ header {
 .social-icon:hover {
     color: #e04e22;
 }
+/* Apply the Google Font to the body using !important */
+body {
+    font-family: 'Poppins', sans-serif !important; /* Your Google Font */
+    font-weight: 700 !important; /* Bold (adjust as needed) */
+}
+
+
+footer a {
+    text-decoration: none; /* Remove underline */
+    color: #fff !important; /* Set the desired color to white */
+}
+
+footer a:hover {
+    color: #E95127 !important; /* Set the desired hover color (red) */
+}
+
+/* Apply spacing to the centered links in the footer */
+.text-center ul.list-inline {
+    justify-content: space-between;
+}
+
+/* Add padding to the list items to create spacing */
+.text-center ul.list-inline li {
+    padding: 0 15px; /* Adjust the padding to control spacing */
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Style for the copyright notice */
+.copyright-notice {
+    font-size: 12px; /* Adjust the font size as needed */
+    color: #ccc;    /* Light gray color */
+}
