@@ -108,3 +108,4 @@ window.onYouTubeIframeAPIReady = function () {
 };
 
 searchForm.on("submit", submitSearchForm);
+
