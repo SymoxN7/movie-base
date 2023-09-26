@@ -92,6 +92,10 @@ header {
     background-color: white;
 }
 
+.movie-info {
+    color: #14171B !important;
+}
+
 /* Footer link styles */
 footer a {
     text-decoration: none;
