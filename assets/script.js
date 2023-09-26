@@ -1,6 +1,6 @@
 const movieAPIURL = `https://www.omdbapi.com/?apikey=311257cc&`;
 const youtubeAPIURL = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=';
-const API_KEY_YT = 'AIzaSyBuTLhiQV8e8hplI1xX2Jv_HYhOS5kkRf8'
+const API_KEY_YT = 'AIzaSyCYxi7P8k9b8By4y_7HTw79vWOlmyQu4CA'
 
 
 let searchInput = $("#search-input");
