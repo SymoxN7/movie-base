@@ -121,3 +121,16 @@ footer {
 .social-icons ul.list-inline li:last-child {
     margin-right: 0; /* Remove margin from the last item to avoid extra spacing */
 }
+
+/*Carousel test CSS*/
+.carousel-column {
+    float: left;
+    width:20%;
+    padding 5px;
+}
+
+.carousel-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

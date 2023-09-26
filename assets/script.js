@@ -57,3 +57,4 @@ function submitSearchForm(event) {
 }
 
 searchForm.on("submit", submitSearchForm);
+
