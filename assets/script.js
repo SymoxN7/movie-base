@@ -125,4 +125,21 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
 //Carousel code ends//
+
+// Search bar prefilled text
+function clearSearchText(input) {
+  if (input.value === "Search your movie") {
+      input.value = "";
+      input.classList.remove("light-grey");
+  }
+}
+
+function restoreSearchText(input) {
+  if (input.value === "") {
+      input.value = "Search your movie";
+      input.classList.add("light-grey");
+  }
+}
+
