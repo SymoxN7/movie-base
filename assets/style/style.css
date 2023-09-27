@@ -42,6 +42,7 @@ header {
   height: auto;
   display: block;
   margin: 0 auto;
+}
 
 header {
     position: fixed;
@@ -305,5 +306,3 @@ transform: translateX(0);
 .carousel-inner .carousel-item-start { 
   transform: translateX(0);
 }
-
-/*Carousel code ends*/
