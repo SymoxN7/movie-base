@@ -125,6 +125,7 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
 //Carousel code ends//
 
 // Search bar prefilled text
@@ -141,3 +142,4 @@ function restoreSearchText(input) {
       input.classList.add("light-grey");
   }
 }
+

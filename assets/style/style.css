@@ -42,6 +42,19 @@ header {
   height: auto;
   display: block;
   margin: 0 auto;
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    /* z-index: 1000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #14171B;
+    padding: 28px 12%;
+    transition: all 0.5s ease;
 }
 
 .logo span {
@@ -150,6 +163,7 @@ header {
 
 /* Sidebar Styles */
 .sidebar {
+
   width: 25%;
   background-color: white;
   margin-top: 50px; 
@@ -249,6 +263,47 @@ footer {
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
 transform: translateX(0);
+}
+
+/*Carousel code ends*/
+
+/*Carousel code starts*/
+.carousel-area {
+    background: #353C45;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
 }
 
 /*Carousel code ends*/
