@@ -37,6 +37,12 @@ header {
   padding: 28px 12%;
 }
 
+.head-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo img {
   width: 265px;
   height: auto;
