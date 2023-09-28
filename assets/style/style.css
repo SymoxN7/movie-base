@@ -197,6 +197,20 @@ header {
   padding: 10px;
 }
 
+.hist-btn{
+  background-color:#e04e22 !important;
+  color: #000;
+  border:#14171B !important;
+  border-radius: 10%;
+  width: 100%;
+  margin-top: 5px !important;
+}
+
+.search-title {
+  display: flex;
+  justify-content: center;
+}
+
 /* Footer Link Styles */
 footer a {
   text-decoration: none;
