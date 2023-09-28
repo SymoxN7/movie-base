@@ -49,7 +49,15 @@
                             <input id="search-input" class="light-grey" value="Search your movie" onfocus="clearSearchText(this)" onblur="restoreSearchText(this)" />
                               <button type="submit" id="search-button" class="btn btn-primary btn-lg">Search</button>
                           </form>
-                          <section id="search-history">Your Search History</section>
+                        <section><h5 class="card-title search-title">Search History</h5></section>
+                          <section id="search-history">
+                            <h2 class="card-title"></h2>
+                            <div class="card">
+                                <div class="card-body">
+                                    <ul id="history-list"></ul>
+                                </div>
+                            </div>
+                          </section>
                       </div>
                   </div>
                   <div class="col-md-9">

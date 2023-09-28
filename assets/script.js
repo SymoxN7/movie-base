@@ -94,6 +94,7 @@ function submitSearchForm(event) {
       movieList.append(movieDir);
       movieList.append(movieWrit);
     });
+  appendSearchHistory(search)
 }
 
 // Load the YouTube iframe API asynchronously
@@ -143,3 +144,46 @@ function restoreSearchText(input) {
   }
 }
 
+function renderSearchHistory() {
+  searchHistoryContainer.html("");
+
+  for (let i = 0; i < searchHistory.length; i++) {
+    let btn = $("<button>");
+    btn.attr("type", "button");
+    btn.addClass("history-btn btn-history hist-btn btn");
+    btn.attr("data-search", searchHistory[i]);
+    btn.text(searchHistory[i]);
+    searchHistoryContainer.append(btn);
+  }
+}
+
+function appendSearchHistory(search) {
+  if (searchHistory.indexOf(search) !== -1) {
+    return;
+  }
+  searchHistory.push(search);
+
+  localStorage.setItem("search-history", JSON.stringify(searchHistory));
+  renderSearchHistory();
+}
+
+function showSearchHistory() {
+  let storedHistory = localStorage.getItem("search-history");
+
+  if (storedHistory) {
+    searchHistory = JSON.parse(storedHistory);
+  }
+  renderSearchHistory();
+}
+
+function clickSearchHistory(event){
+  if(!$(event.target).hasClass("btn-history")){
+    return
+  }
+  let search = $(event.target).attr("data-search")
+
+  submitSearchForm(search);
+  searchInput
+}
+
+showSearchHistory()
